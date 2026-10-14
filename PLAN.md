@@ -1,6 +1,6 @@
 # V5 mixture and curriculum: falsifiable draft
 
-**Status: local review draft; no Git commit or submission.** A local structural proxy was executed (see `proxy-summary.csv`, `proxy-checks.json`, and `proxy.ps1`). It tests allocation plumbing, not model learning. **1B and 3B parameter training has not been run.** The cleaned-data gate is also unverified; this document must not be represented as a completed, empirically validated assignment.
+A local structural proxy was executed (see `proxy-summary.csv`, `proxy-checks.json`, and `proxy.ps1`). It tests allocation plumbing, not model learning. **1B and 3B parameter training has not been run.** The cleaned-data gate is also unverified; this document must not be represented as a completed, empirically validated assignment.
 
 ## 1. Hypothesis and fixed accounting
 
@@ -133,13 +133,5 @@ Cleaning priority: verified native languages with weak stock → executable mult
 The assignment says review begins only after the team's cumulative data-gating threshold. Session 4 was checked: its assignment specifies a 10–100M dataset but does not specify this cumulative threshold. Team records must establish it. Current gate status: **unknown, not met by evidence in this workspace**. This draft is ready for review locally, but final submission needs cleaned manifests, real 1B/3B run results, and the eventual GitHub README link. No commit was made.
 
 Additional V4 lessons from the transcript: no live terminal/tool execution harness (around 01:05), training on incorrectly formatted/fully supervised task material (around 01:00), and an unstaged selector-proxy difficulty mix (around 01:50). Require executable rollouts with actual tool feedback, role-correct masks, and stage-specific selector-development tasks. Use the current model checkpoint for selection updates rather than an unrelated distilled model; refresh at a predeclared interval (initial proposal every 100 optimizer steps, tune overhead in the 1B screen).
-
-## Sources and evidence boundaries
-
-- [Session 5 lesson](https://axiom.theschoolofai.in/courses/cmq97i5kn032208o8xu5dab4q/sessions/cmryiscq4002009rhmu56icmp/lesson?zen=1), all twelve sections; local `session5-lesson.txt`.
-- [Session transcript](https://docs.google.com/document/d/1VATcZvXczsYwKMDEWoyanB7nfzjrFkXHb2ojf-95kjc/edit), especially 00:10 masking, 01:15–01:20 stages, 01:35–01:45 selector/short windows, 01:55 transitions, 02:00–02:05 assignment/context; local `session5-transcript.md`. Automatically generated transcript has errors.
-- [Inventory widget](https://axiom.theschoolofai.in/widgets/widget_9_dataset_inventory.html) and [benchmark widget](https://axiom.theschoolofai.in/widgets/widget_2_benchmark_explainer.html): course estimates and illustrative tasks, not measured training stock.
-- [Sangraha dataset card](https://huggingface.co/datasets/ai4bharat/sangraha): provenance semantics; [AI4Bharat release blog](https://ai4bharat.iitm.ac.in/blog/indicllm-suite/): native/unverified release context.
-- [SWE-smith paper](https://arxiv.org/abs/2504.21798): task/trajectory distinction; [OpenMathReasoning card](https://huggingface.co/datasets/nvidia/OpenMathReasoning): long-trace source.
 
 V4's ~150x gradient spike and ~6x effective-token claim are course-reported observations, not reproduced here. All proposed allocations, safety margins, repeat caps and acceptance thresholds are explicitly hypotheses requiring model experiments.
