@@ -1,0 +1,16 @@
+﻿{
+    "experiment":  "structural proxy, NOT 1B/3B training",
+    "seeds":  10,
+    "batches_per_seed":  20,
+    "candidate_units_per_batch":  2500,
+    "retained_units_per_batch":  1000,
+    "token_unit":  "equal-length simulated blocks",
+    "masked_fixture_total":  425,
+    "masked_fixture_supervised":  105,
+    "tool_tokens_supervised":  0,
+    "reserve_overlap":  0,
+    "negative_control_overlap_detected":  1,
+    "hard_transition_L1_percentage_points":  34,
+    "ramp_100_steps_max_L1_percentage_points":  0.34,
+    "capability_metrics_measured":  false
+}
